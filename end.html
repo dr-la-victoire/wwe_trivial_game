@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>WWE Trivia Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="final-score">It is Over!</h1>
+        <h1 id="game-score"></h1>
+    </div>
+</body>
+<script>
+    // Function to get the value of a query parameter from the URL
+    const getQueryParam = (name) => {
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        return urlSearchParams.get(name);
+    };
+
+    // Retrieve the score from the URL
+    const score = getQueryParam('score');
+    console.log(score);
+
+    // Display the score on the page
+    const scoreElement = document.getElementById('game-score');
+    scoreElement.innerText = `Your Score: ${score}`;
+</script>
+</html>

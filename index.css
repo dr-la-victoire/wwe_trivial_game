@@ -1,0 +1,62 @@
+/* CLEARING STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* GENERAL STYLES */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.4rem;
+}
+
+#game-score {
+    font-size: 2.4rem;
+    margin-bottom: 0.4rem;
+}
+
+/* LAYOUT STYLES */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* STYLING THE LINKS */
+a {
+    font-size: 0.8rem;
+    padding: 1rem 0;
+    width: 15rem;
+    text-align: center;
+    border: 0.1rem solid gold;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 gold;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms
+}
