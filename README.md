@@ -1,0 +1,1 @@
+This program is a simple trivia game built with HTML, CSS and JavaScript.
